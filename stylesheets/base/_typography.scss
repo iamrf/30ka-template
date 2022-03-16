@@ -1,0 +1,26 @@
+.header-intro {
+    display: inline-block;
+    width: 0;
+    font-size: 5.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    background: linear-gradient(30deg, $color-blue2, #9e5b5b, #f69d3c);
+    background-clip: text;
+    color: transparent;
+    border-left: 1rem solid $color-blue2;
+    animation: typewriting 1.2s steps(18) 1.2s 1 normal forwards, typewriting-cursor 1s steps(1) infinite;
+    @media only screen and (max-width: 992px) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 1200px) {
+        font-size: 3rem;
+    }
+}
+.header-subtitle {
+    font-size: 2rem;
+    line-height: 2;
+    color: $color-gray-7;
+    @media only screen and (max-width: 992px) {
+        font-size: 1.5rem;
+    }
+}

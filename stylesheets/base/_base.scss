@@ -1,0 +1,40 @@
+/* Cascade */
+/* Inheritance */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 1.5rem;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $color-blue1;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: $color-orange1;
+}

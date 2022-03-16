@@ -1,0 +1,40 @@
+.btn {
+    position: relative;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.3rem $color-gray;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &__swipe {
+        color: $color-white-f1;
+        background-color: $color-orange2;
+        & > span {
+            position: relative;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: $color-orange3;
+            transform: scale(0, 1);
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            color: $color-white-f1;
+            &::after {
+                transform: scale(1, 1);
+            }
+        }
+    }
+}
