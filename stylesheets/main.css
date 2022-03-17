@@ -160,8 +160,20 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
 .hidden {
   display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
@@ -624,6 +636,17 @@ h6 {
   opacity: 0;
   -webkit-animation: stroke-dashoffset 0.6s linear forwards;
           animation: stroke-dashoffset 0.6s linear forwards;
+}
+
+.course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {
