@@ -12,6 +12,9 @@
         margin: 2rem;
         border: 0.1rem solid $color-white-f1;
         border-radius: 0.5rem;
+        @media only screen and (max-width: 375px) {
+            width: 100%;
+        }
     }
 
     // Header
@@ -103,6 +106,10 @@
     &__tags {
         display: flex;
         justify-content: center;
+        @media only screen and (max-width: 576px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
     &__tag {
         position: relative;
@@ -164,6 +171,10 @@
         align-items: center;
         padding: 2rem;
         border-top: 0.1rem solid $color-white-f1;
+        @media only screen and (max-width: 576px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
     &__price {
         padding: 0.5rem;
@@ -199,12 +210,12 @@
         height: 5rem;
         overflow: hidden;
         pointer-events: none;
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             top: 3.5rem;
             right: 0;
-            border: .5rem solid $color-orange2;
+            border: 0.5rem solid $color-orange2;
             border-bottom-color: transparent;
             border-right-color: transparent;
         }

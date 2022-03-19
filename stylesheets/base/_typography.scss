@@ -32,3 +32,22 @@ h6 {
         font-size: 1.5rem;
     }
 }
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    font-size: 3rem;
+    &::before,
+    &::after {
+        content: "";
+        width: 20rem;
+        height: .2rem;
+        margin: 0 1rem;
+        background-color: $color-orange1;
+        @media only screen and (max-width:768px){
+            width: 100%;
+        }
+    }
+}
