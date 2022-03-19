@@ -112,7 +112,7 @@
         & a {
             color: $color-white;
             &:hover {
-                color: $color-gray-9;
+                color: $color-white-f1;
             }
         }
         &::before {
@@ -153,5 +153,37 @@
                 border-right-color: $color-orange1;
             }
         }
+    }
+    // Footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        border-top: 0.1rem solid $color-white-f1;
+    }
+    &__price {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: $color-white-f1;
+    }
+    &__stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: ltr;
+    }
+    &__star {
+        color: goldenrod;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover ~ .course__star {
+            color: $color-gray-9;
+        }
+    }
+    &__resault {
+        margin: .2rem;
+        padding: .5rem;
     }
 }

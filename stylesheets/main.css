@@ -798,7 +798,7 @@ h6 {
 }
 
 .course__tag a:hover {
-  color: #999999;
+  color: #f1f1f1;
 }
 
 .course__tag::before {
@@ -845,6 +845,56 @@ h6 {
 
 .course__tag--orange::after {
   border-right-color: #e76f51;
+}
+
+.course__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  border-top: 0.1rem solid #f1f1f1;
+}
+
+.course__price {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+}
+
+.course__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: ltr;
+}
+
+.course__star {
+  color: goldenrod;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.course__star:hover ~ .course__star {
+  color: #999999;
+}
+
+.course__resault {
+  margin: .2rem;
+  padding: .5rem;
 }
 
 @media only screen and (max-width: 768px) {
