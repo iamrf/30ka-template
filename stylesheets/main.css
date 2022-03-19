@@ -1564,4 +1564,46 @@ h6 {
 .features__text {
   padding: 1rem 2rem;
 }
+
+.plans {
+  position: relative;
+}
+
+.plans__cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans__background {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 20rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(196, 136, 229, 0.5)), to(rgba(113, 185, 221, 0.5)));
+  background: linear-gradient(to right, rgba(196, 136, 229, 0.5), rgba(113, 185, 221, 0.5));
+}
+
+.plans__background::before, .plans__background::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10rem;
+  background-image: url("../images/wave-plans.svg");
+  background-size: 100% 100%;
+}
+
+.plans__background::after {
+  -webkit-transform: rotate(0.5turn);
+          transform: rotate(0.5turn);
+}
 /*# sourceMappingURL=main.css.map */
